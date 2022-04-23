@@ -1,0 +1,31 @@
+body{
+    background-color: #F7E3DE;
+}
+
+button{
+    margin: 2%;
+    color: white;
+    background-color: #B04958;
+    border: 0px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    transition-duration: 0.4s;
+    padding: 10px;
+    width: 8%;
+}
+
+button:hover{
+    background-color: #9C414F;
+}
+
+input, select{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 1;
+    font-size: medium;
+}
+
+

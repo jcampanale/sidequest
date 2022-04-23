@@ -74,18 +74,22 @@ app.post('/login', (request, response) =>{
 })
 
 app.post('/create', (request, response)=>{
-    console.log("testing");
     let newUName = request.body.newUser,
         newPsswd = request.body.newPassword,
             entry = {username: newUName, password: newPsswd};
-    users_collection.insertOne( entry )
-    .then(regRes => users_collection.findOne(regRes.insertedId))
-    .then(user=>{
-        response.cookie('login', true)
-        response.cookie('userid', user._id)
-        response.cookie('username', user.username)
-        response.redirect('main.html')
-    });
+    if(newUName != '' && newPsswd != ''){
+        users_collection.insertOne( entry )
+        .then(regRes => users_collection.findOne(regRes.insertedId))
+        .then(user=>{
+            response.cookie('login', true)
+            response.cookie('userid', user._id)
+            response.cookie('username', user.username)
+            response.redirect('main.html')
+        });
+    }
+    else{
+        response.sendFile(__dirname + '/public/index.html');
+    }
 })
 
 // Start listening either on a defined port or 3000
