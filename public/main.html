@@ -4,10 +4,26 @@
     <title>SideQuest - Home</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sign in page for Side Quest">
+    <meta name="description" content="Home page for SideQuest">
     <script src="js/scripts.js"></script>
+    <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
   </head>
   <body>
+    <!--hotbar goes here-->
+    <ul>
+      <li class="hotbar-left"><a onclick="alert('button does not function right now')"><img src="/images/user.png" alt="mail icon" width="35" height="35"></a></li>
+      <li class="hotbar-left"><a onclick="alert('button does not function right now')">Exp</a></li>
+      <li class="hotbar-right"><a onclick="alert('button does not function right now')"><img src="/images/mail.png" alt="mail icon" width="35" height="35"></a></li>
+      <li class="hotbar-right"><a onclick="alert('button does not function right now')"><img src="/images/settings.png" alt="mail icon" width="35" height="35"></a></li> 
+    </ul>
+    <center>
     <h1 id="userSI"></h1>
+    <button type="submit">My Games</button>
+    <br>
+    <button type="submit" onclick="alert('button does not function right now')">My Feed</button>
+    </center>
   </body>
 </html>
