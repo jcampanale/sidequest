@@ -212,3 +212,10 @@ td{
 .submitButton{
     width: 50%;
 }
+
+.back{
+    cursor: pointer;
+    position: absolute;
+    left: 3%;
+    bottom: 5%
+}
