@@ -2,6 +2,13 @@ h1{
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
 }
+
+.studio-h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    color: #9C414F;
+}
+
 body{
     background-color: #F7E3DE;
 }
@@ -23,6 +30,20 @@ button:hover{
     background-color: #9C414F;
 }
 
+.homeButton{
+    margin: 2%;
+    color: white;
+    background-color: #B04958;
+    border: 0px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    padding: 10px;
+    transition-duration: 0.4s;
+    width: 30%;
+    height: 20%;
+}
+
 input, select{
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -37,7 +58,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: #333333;
 }
 
 .hotbar-left{
@@ -52,12 +73,53 @@ li a {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 14px;
+    padding: 14px 16px;
     text-decoration: none;
 }
   
-  li a:hover {
+li a:hover {
     background-color: #111;
 }
 
+.container{
+    width: 200px;
+    background-color: #ddd;
+}
+
+.exp{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: #CC353B;
+    width: 66%;
+    background-color: #CC353B;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: center;
+}
+
+.edit{
+    cursor: pointer;
+}
+
+.newGameButton{
+    margin: 2%;
+    color: white;
+    background-color: #333333;
+    border: 0px;
+    border-radius: 4px;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    padding: 10px;
+    transition-duration: 0.4s;
+    width: 30%;
+    height: 20%;
+}
+
+.newGameButton:hover{
+    background-color: #1a1a1a;
+}
 

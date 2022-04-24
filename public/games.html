@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
-    <title>SideQuest - Home</title>
+    <title>SideQuest - Games</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Home page for SideQuest">
+    <meta name="description" content="Game page for SideQuest">
     <script src="js/scripts.js"></script>
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,11 +19,17 @@
       <li class="hotbar-right"><a onclick="alert('button does not function right now')"><img src="/images/mail.png" alt="mail icon" width="35" height="35"></a></li>
       <li class="hotbar-right"><a onclick="alert('button does not function right now')"><img src="/images/settings.png" alt="mail icon" width="35" height="35"></a></li> 
     </ul>
+    <br><br>
     <center>
-    <h1 id="userSI"></h1>
-    <button class="homeButton" type="submit" onclick="location.href='games.html'">My Games</button>
-    <br>
-    <button class="homeButton" type="submit" onclick="alert('button does not function right now')">My Feed</button>
+        <img src="/images/user_circle.png" alt="studio icon picture" width="225" height="225" onclick="alert('button does not function right now')" class="edit">
+        <div class="flex-container">
+            <h1 class="studio-h1">Game Studio</h1>
+            <img src="/images/edit.png" alt="edit picture" width="35" height="35" onclick="alert('button does not function right now')" class="edit">
+        </div>
+        <hr width="50%" color="#333">
+        <button class="newGameButton" onclick="alert('button does not function right now')"> New Game<br/> +</button>
+        <br>
+        <button class="homeButton">Game 1</button>
     </center>
   </body>
 </html>
