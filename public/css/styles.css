@@ -3,6 +3,11 @@ h1{
     font-size: 50px;
 }
 
+h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
 .studio-h1{
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
@@ -123,3 +128,50 @@ li a:hover {
     background-color: #1a1a1a;
 }
 
+.card{
+    border: 3px solid #9C414F;
+    background-color: #9C414F;
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    border-radius: 5%;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.card-container{
+    background-color: lightgray;
+    padding: 2px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.schedule{
+    background-color: #333333;
+    width: 15%;
+    position: absolute;
+    top: 18%;
+    right: 25%;
+    border-radius: 5%;
+    transition-duration: 0.4s;
+    text-align: center;
+    color: white;
+}
+
+.status{
+    background-color: #333333;
+    width: 15%;
+    position: absolute;
+    bottom: 12%;
+    right: 25%;
+    border-radius: 5%;
+    transition-duration: 0.4s;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
