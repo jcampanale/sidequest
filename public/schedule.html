@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head> 
-    <title>SideQuest - Game 1</title>
+    <title>SideQuest - Schedule</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Game page for SideQuest">
+    <meta name="description" content="Schedule page for SideQuest">
     <script src="js/scripts.js"></script>
     <link rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,20 +20,30 @@
       <li class="hotbar-right"><a onclick="alert('button does not function right now')"><img src="/images/mail.png" alt="mail icon" width="35" height="35"></a></li>
       <li class="hotbar-right"><a onclick="alert('button does not function right now')"><img src="/images/settings.png" alt="mail icon" width="35" height="35"></a></li> 
     </ul>
-    <br><br>
     <div class="card">
-        <h1 class="edit" onclick="alert('button does not function right now')">Game 1</h1>
+        <h1>Upcoming Deadlines</h1>
         <div class="card-container">
-            <img src="/images/camera.png" alt="picture icon" width="350px" height="350px" class="edit" onclick="alert('button does not function right now')">
+            <table id="schedule-table">
+                <tr>
+                    <th>Feature</th>
+                    <th>Notes</th>
+                    <th>Deadline</th>
+                </tr>
+            </table>
         </div>
     </div>
-    <div class="schedule" onclick="location.href='schedule.html'">
-        <h2>Schedule</h2>
-        <img src="/images/schedule.png" alt="schedule icon" width="75%" class="edit">
-    </div>
-    <div class="status">
-        <h2>Status Update</h2>
-        <img src="/images/status.png" alt="status icon" width="75%" class="edit">
+    <div class="scheduleForm">
+        <h1>Add to Schedule</h1>
+        <form action="">
+            <input type="text" id="feature-name" placeholder="Feature Name Here">
+            <br>
+            <p>Upload .txt File of Notes</p>
+            <input type="file" id="notes-file">
+            <br><br>
+            <input type="text" id="deadline" placeholder="Deadline Here">
+            <br><br>
+            <button class="submitButton" onclick="alert('button not working yet')">Submit</button>
+        </form>
     </div>
   </body>
 </html>

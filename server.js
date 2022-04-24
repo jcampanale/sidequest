@@ -1,7 +1,8 @@
 const { request, response } = require('express')
 const express = require('express'),
     mongodb = require('mongodb'),
-    bodyParser = require('body-parser')
+    bodyParser = require('body-parser');
+const req = require('express/lib/request');
     cookieParser = require('cookie-parser');
 
 const app = express()
@@ -90,6 +91,12 @@ app.post('/create', (request, response)=>{
     else{
         response.sendFile(__dirname + '/public/index.html');
     }
+})
+
+app.post('/add', (request, response)=>{
+    console.log(request.body)
+    let entry = request.body
+    collection.insertOne(entry).then(response.json(entry))
 })
 
 // Start listening either on a defined port or 3000

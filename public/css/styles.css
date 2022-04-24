@@ -8,6 +8,10 @@ h2{
     font-size: 25px;
 }
 
+p{
+    font-family: 'Poppins', sans-serif;
+}
+
 .studio-h1{
     font-family: 'Poppins', sans-serif;
     font-size: 50px;
@@ -174,4 +178,37 @@ li a:hover {
     justify-content: center;
     text-align: center;
     color: white;
+}
+
+table{
+    margin: 1%;
+}
+
+th{
+    background-color: gray;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+    color: white;
+  }
+  
+td{
+  border:1px solid black;
+  border-radius: 4px;
+  text-align: center;
+  padding: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+}
+
+.scheduleForm{
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    text-align: center;
+}
+
+.submitButton{
+    width: 50%;
 }
