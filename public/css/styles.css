@@ -219,3 +219,49 @@ td{
     left: 3%;
     bottom: 5%
 }
+
+.status-container{
+    border: 3px solid #9C414F;
+    background-color: lightgray;
+    width: 40%;
+    text-align: center;
+    position: absolute;
+    top: 20%;
+    left: 15%;
+    border-radius: 5%;
+    color: white;
+    transition-duration: 0.4s;
+}
+
+.status-container-2{
+    background-color: #9C414F;
+    padding: 2px 16px;
+}
+
+.post{
+    border-bottom: 3px solid #9C414F;
+    width: 100%;
+    color: #1a1a1a;
+    text-align: left;
+    display: flex;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 20%;
+    right: 15%;
+    border: 3px solid #9C414F;
+    z-index: 9;
+  }
+
+.form-container{
+    max-width: 1000px;
+    padding: 10px;
+    background-color: lightgray;
+}

@@ -64,3 +64,13 @@ function tableData(){
     notesCell.innerHTML = arr[index].nfile
     deadlineCell.innerHTML = arr[index].dline
 }
+
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+    document.getElementById("exp").style.width = "90%"
+    alert('this button does not post yet, but you did earn some experience!')
+}
